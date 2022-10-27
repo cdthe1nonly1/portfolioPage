@@ -1,0 +1,86 @@
+:root {
+  /* color variables selected for this page */
+  --lightblue: #74b2f0;
+  --mediumblue: rgb(68, 68, 240);
+  --darkblue: rgb(9, 9, 96);
+  --light: rgb(214, 219, 246);
+  /* example color: var(--text); */
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* sets the paramater for the header */
+header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--darkblue);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--lightblue);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: var(--light);
+}
+/* sets the paramater for the nav */
+nav {
+  background-color: var(--mediumblue);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: var(--lightblue);
+  padding-right: 15px;
+}
+
+main {
+  /* Turns this element into a flexbox */
+  display: flex;
+  /* elements will wrap if screen is too small  */
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+/* sets parameters for the footer */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--darkblue);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--lightblue);
+  border-radius: 10px;
+  padding-right: 15px;
+  color: var(--light);
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+}
+/* set profile image width and rounds border */
+.profile {
+  width: 75px;
+  border-radius: 10px 10px 10px 10px;
+  padding-right: 20px;
+}
+
+.project {
+  /* 400px sets the starting width */
+  /* flex-grow 1 allows the elements to grow to fill space */
+  flex: 1 0 400px;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  max-width: 400px;
+}
+
+/* Setting image pictures to 300 and seeting padding on top*/
+.image {
+  width: 300px;
+  padding-top: 10px;
+}
