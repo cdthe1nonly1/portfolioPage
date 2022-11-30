@@ -68,19 +68,39 @@ footer {
   padding-right: 20px;
 }
 
-.project {
+.project1 {
   /* 400px sets the starting width */
   /* flex-grow 1 allows the elements to grow to fill space */
-  flex: 1 0 400px;
-  padding: 10px;
+  flex: 1 0 1200px;
+  background-color: var(--light);
+  padding: 5px;
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  max-width: 400px;
+  max-width: 900px;
+  max-height: 900px;
 }
 
 /* Setting image pictures to 300 and seeting padding on top*/
 .image {
   width: 300px;
   padding-top: 10px;
+}
+
+.project2 {
+  flex: 1 0 100px;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: center;
 }

@@ -15,7 +15,7 @@
     <header>
       <img
         class="profile"
-        src= "assets/images/Charley - Close Gif.gif"
+        src="assets/images/Charley - Close Gif.gif"
         alt="Profile Picture"
       />
       <h1>Charles Dykstra</h1>
@@ -23,16 +23,16 @@
     <!-- Nav bar to includ About, Work, Contact Me, Ressume -->
     <nav class="nav">
       <ul>
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Resume</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contactMe">Contact Me</a>
+        <a href="#resume">Resume</a>
       </ul>
     </nav>
 
     <!-- start the main section  -->
     <section>
-      <h2>About me</h2>
+      <h2 id="aboutme">About me</h2>
       <!-- Paragraph with discription of work history etc -->
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta
@@ -41,38 +41,51 @@
         aliquam doloribus!
       </p>
     </section>
-    <h2>Work</h2>
+    <h2 id="work">Work</h2>
     <main>
-      <section class="project">
+      <div class="project1">
         <header>Project 1</header>
         <img class="image" src="assets/images/Picture 1.jpg" alt="project 1" />
-        
-      </section>
-      <section class="project">
-        <header>Project 2</header>
-        <img class="image" src="assets/images/Picture 2.jpg" alt="project 2" />
-        
-      </section>
-      <section class="project">
-        <header>Project 3</header>
-        <img class="image" src="assets/images/picture 3.webp" alt="project 3" />
-     
-      </section>
-      <section class="project">
-        <header>Project 4</header>
-        <img class="image" src="assets/images/picture 4.webp" alt="project 4" />
-    
+      </div>
+      <div class="flex-container">
+        <section class="project2">
+          <header>Project 2</header>
+          <img
+            class="image"
+            src="assets/images/Picture 2.jpg"
+            alt="project 2"
+          />
+        </section>
 
+        <section class="project2">
+          <header>Project 3</header>
+          <img
+            class="image"
+            src="assets/images/picture 3.webp"
+            alt="project 3"
+          />
+        </section>
+
+        <section class="project2">
+          <header>Project 4</header>
+          <img
+            class="image"
+            src="assets/images/picture 4.webp"
+            alt="project 4"
+          />
+        </section>
+      </div>
     </main>
 
-   <footer>
-   <div>
-      <ul>
-        <a href="#">email</a>
-        <a href="#">phone</a>
-        <a href="#">Github</a>
-      </ul>
-    </div>
-   </footer>
+    <footer>
+      <div>
+        <p id="contactMe">Contact Me</p>
+        <ul>
+          <a href="charles.b.dykstra@gmail.com">email</a>
+          <a>phone: 303-916-0574</a>
+          <a href="https://github.com/cdthe1nonly1">Github</a>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
